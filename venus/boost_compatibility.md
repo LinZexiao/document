@@ -177,12 +177,12 @@ boost 实现的新的订单发起流程主要是基于 `/fil/storage/mk/1.2.0` �
 ###### 两者的时序图
 
 - 传统的的订单发起流程 (基于 /fil/storage/mk/1.0.1 , /fil/storage/mk/1.1.0 /fil/storage/mk/1.1.1 )
-  ![传统订单流程](assert/20221013153319.png)
-  <img src=assert/20221013153319.png width=200 />
+
+<img src=assert/20221013153319.png width=800 />
 
 - boost 提出的新的订单发起流程 (基于 /fil/storage/mk/1.2.0 )
 
-![新的订单流程](assert/20221013143419.png)
+<img src=assert/20221013143419.png width=800 />
 
 ##### 相关源码
 
@@ -447,7 +447,7 @@ select {
 
 简要流程
 
-![](assert/20221013224822.png)
+<img src=assert/20221013224822.png width=800 />
 
 相关源码
 
@@ -565,4 +565,4 @@ func (p *Provider) execDealUptoAddPiece(ctx context.Context, deal *types.Provide
 这个过程主要是通过调用 PieceAdder 接口的 AddPiece 方法来实现.
 其中 PieceAdder 主要底层是由 lotus-miner 的 rpc client 来实现的,其依赖路径如下
 
-![](assert/20221013231224.png)
+<img src=assert/20221013231224.png width=800 />
